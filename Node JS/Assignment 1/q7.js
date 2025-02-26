@@ -11,14 +11,14 @@ class Stack {
       if (this.isEmpty()) {
         return "Stack is empty.";
       }
-      return this.items.pop();
+      return `The popped element from the stack is ${this.items.pop()}`;
     }
   
     peek() {
       if (this.isEmpty()) {
         return "Stack is empty.";
       }
-      return this.items[this.items.length - 1];
+      return `The top most element in stack is ${this.items[this.items.length - 1]}`;
     }
   
     isEmpty() {
@@ -26,7 +26,7 @@ class Stack {
     }
   
     size() {
-      return this.items.length;
+      return `The size of the stack is ${this.items.length}`;
     }
   
     clear() {

@@ -1,3 +1,4 @@
+prompt = require('prompt-sync')()
 function checkArmstrong(num) {
   let sum = 0;
   let rem = 0;
@@ -9,11 +10,12 @@ function checkArmstrong(num) {
     num = Math.floor(num / 10);
   }
   if (sum === temp) {
-    return "Armstrong number";
+    return `${sum} is an armstrong number`;
   } else {
-    return "Not an Armstrong number";
+    return `${sum} is not an armstrong number`;
   }
 }
 
-let num = checkArmstrong(153);
-console.log(num);
+num = parseInt(prompt("Enter the number: "));
+armstrong = checkArmstrong(num)
+console.log(armstrong);

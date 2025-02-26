@@ -16,10 +16,6 @@ function removeElement(arr, value) {
     return arr.filter(item => item !== value);
 }
   
-//   // Usage example:
-//   arr = [1, 2, 3, 4, 5];
-//   arr = removeElement(arr, 3);
-//   console.log(arr); // Output: [1, 2, 4, 5]
 
 const prompt = require('prompt-sync')();
 length = parseInt(prompt("Enter the length: "));

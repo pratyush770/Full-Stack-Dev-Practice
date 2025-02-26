@@ -1,3 +1,4 @@
+prompt = require('prompt-sync')()
 function isPerfectNumber(num) {
     var temp = 0;
     for(var i=1;i<=num/2;i++) {
@@ -7,12 +8,13 @@ function isPerfectNumber(num) {
     }
 
     if (temp === num && temp != 0) {
-        return "Perfect Number";
+        return `${temp} is a perfect number`;
     } 
     else {
-        return "Not a perfect Number";
+        return `${temp} is not a perfect number`;
     }
 }
 
-num = isPerfectNumber(6);
-console.log(num);
+num = parseInt(prompt("Enter the number: "))
+perfect = isPerfectNumber(num);
+console.log(perfect);
