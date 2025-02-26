@@ -1,4 +1,3 @@
-// 
 function isPerfectNumber(num) {
     var temp = 0;
     for(var i=1;i<=num/2;i++) {

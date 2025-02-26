@@ -2,7 +2,7 @@ function createArray(length) {
     let arr = new Array(length);
     const prompt = require('prompt-sync')();
     for (let i = 0; i < length; i++) {
-        val = parseInt(prompt("Enter the value:"));
+        val = parseInt(prompt("Enter the value: "));
         arr[i] = val;
     }
     return arr;
