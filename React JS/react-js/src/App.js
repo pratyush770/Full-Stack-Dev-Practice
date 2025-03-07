@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src="/yadav-ji.jpg" className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+            System faad dege!
         </p>
         <a
           className="App-link"
