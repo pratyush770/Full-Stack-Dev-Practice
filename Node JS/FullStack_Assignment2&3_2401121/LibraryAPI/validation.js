@@ -1,7 +1,7 @@
 const Joi =require("joi");
 
 const bookSchema = Joi.object({
-    id : Joi.number().integer().min(1).max(4).required(),
+    id : Joi.number().integer().min(1).max(9999).required(),
     title : Joi.string().min(3).required(),
     author : Joi.string().min(3).required(),
     price: Joi.number().integer().required(),
